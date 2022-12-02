@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+
+.cartoes {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    width: 340px;
+    height: 380px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cartao .imagem>img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.cartao .info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 30px 0px;
+}
+
+.cartao .info h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cartao .info .title p {
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+}
+
+.cartao .preco {
+    text-align: right;
+    color: red;
+}
+
+.cartao .botao {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartao .botao a {
+    text-decoration: none;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 10px;
+    background: #ffa600;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cartao .botao .bt2 {
+    background: #1d2630;
+    padding: 12px 15px;
+}
+
+
+.pag-principal {
+    width: 100vw;
+    /* vw: porcentagem da largura*/
+    height: 100vh;
+    /* vh: porcentagem da altura*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo-imagem {
+    width: 50vw;
+    /* vw: porcentagem da largura*/
+    height: 100vh;
+    /* vh: porcentagem da altura*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campo-imagem-image {
+    width: 50vw;
+}
+
+.campo-texto {
+    width: 50vw;
+    /* vw: porcentagem da largura*/
+    height: 100vh;
+    /* vh: porcentagem da altura*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-texto {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.conteudo-texto>h1 {
+    color: #303030;
+    font-weight: 800;
+    margin: 0;
+}
+.pag-principal h1{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pag-principal h1 span {
+    color: #ffa600;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.titulo1{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.fundo{
+    overflow-x: hidden;
+}
+.container-lista{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.container-lista .lista{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.container-lista .lista i{
+    color: #ffa600;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 3px black;
+    margin-bottom: 50px;
+}
+.container-lista .lista p{
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    
+}
+footer{
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1d2630;
+    color: #fff;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pag-principal{
+        flex-direction: column;
+    }
+    .campo-imagem{
+        width: 100%;
+        height: auto;
+    }
+    .campo-texto{
+        width: 100%;
+        height: auto;
+    }
+    .campo-imagem-image{
+        width: 70vw;
+    }
+    .conteudo-texto{
+        width: 90%;
+    }
+    .container-lista .lista{
+        flex-direction: column;
+        align-items: center;
+    }
+}
